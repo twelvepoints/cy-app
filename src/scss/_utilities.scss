@@ -1,0 +1,99 @@
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.btn {
+  background: $accent-color;
+  color: $primary-color;
+  padding: 10px 20px;
+  text-align: center;
+  transition: all 0.15s linear;
+  border-radius: $border-radius;
+
+  &:hover,
+  &:focus {
+    background: $primary-color;
+    color: $custom-color-1;
+  }
+}
+
+.btn--hollow {
+  background: transparent;
+  color: $accent-color;
+  border: 1px solid $accent-color;
+
+  &:hover,
+  &:focus {
+    background: $accent-color;
+    border-color: $accent-color;
+    color: $custom-color-1 !important;
+  }
+}
+
+.btn--full {
+  display: block;
+}
+
+
+
+
+
+
+
+// fullwidth wrapper
+
+.fullwidth-wrapper {
+  margin: 0 -24px;
+
+  @media (min-width: $break-large) {
+    margin: 0 -32px;
+  }
+}
+
+
+
+
+
+// slider wrapper
+
+.slider-wrapper {
+  margin: 0 -24px;
+
+  @media (min-width: $break-large) {
+    margin: 0 -32px;
+  }
+}
+
+
+
+
+.section-padding {
+  padding-bottom: calc(#{$pad-unit} * 2);
+
+  @media (min-width: $break-large) {
+    padding-bottom: calc(#{$pad-unit-large} * 2);
+  }
+}
+
+
+
+.fullwidth-image {
+  margin: 0 -$pad-unit;
+
+  @media (min-width: $break-large) {
+    margin: 0 -$pad-unit-large;
+  }
+}
+
+.fullwidth-image--top {
+  margin: -$pad-unit;
+  margin-bottom: $pad-unit;
+
+  @media (min-width: $break-large) {
+    margin: -$pad-unit-large;
+    margin-bottom: $pad-unit-large;
+  }
+}

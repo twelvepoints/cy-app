@@ -1,0 +1,21 @@
+.account-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .profile-image {
+    border-radius: 99px;
+    border: 2px solid $accent-color;
+    margin: 16px;
+  }
+
+  .name {
+    color: $primary-color;
+    font-size: 22px;
+  }
+
+  .email {
+    color: $accent-color;
+    font-size: 90%;
+  }
+}

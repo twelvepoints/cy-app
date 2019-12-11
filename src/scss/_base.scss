@@ -1,0 +1,110 @@
+/*
+ *******************
+ * PAGE MAIN STYLE *
+ *******************
+*/
+
+
+// Make type normal across browsers
+*, html, body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  background-color: $base-bg-color;
+  color: $base-font-color;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $heading-font-color;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  line-height: 1.2;
+  margin-bottom: $pad-unit;
+
+  @media (min-width: $break-large) {
+    margin-bottom: $pad-unit-large;
+  }
+}
+
+
+h1 {
+  font-size: 160%;
+}
+h2 {
+  font-size: 140%;
+}
+h3 {
+  font-size: 120%;
+}
+h4 {
+  font-size: 100%;
+}
+
+
+a, a:visited {
+  text-decoration: none;
+  color: $accent-color;
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+}
+
+p {
+  line-height: 1.5;
+}
+
+p, ul {
+  margin-bottom: 16px;
+}
+
+p, li, ol {
+  color: $secondary-color;
+}
+
+
+
+
+
+
+
+
+main {
+  padding: $pad-unit;
+  margin: 0 0 52px 0;
+
+  @media (min-width: $break-large) {
+    margin: 0 0 0 100px;
+    padding: $pad-unit-large;
+  }
+}
+
+
+
+header {
+  text-align: center;
+  margin-bottom: $pad-unit;
+
+  @media (min-width: $break-large) {
+    margin-bottom: $pad-unit;
+  }
+
+  img {
+    height: 42px;
+
+    @media (min-width: $break-large) {
+      height: 64px;
+    }
+  }
+}
+
+
+
+

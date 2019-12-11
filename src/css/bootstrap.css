@@ -1,0 +1,12 @@
+.row > .col,
+.row > [class*="col-"] {
+  padding-right: 4px;
+  padding-left: 4px; }
+
+@media (min-width: 1024px) {
+  .row > .col,
+  .row > [class*="col-"] {
+    padding-right: 8px;
+    padding-left: 8px; } }
+
+/*# sourceMappingURL=maps/bootstrap.css.map */

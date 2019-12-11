@@ -1,0 +1,83 @@
+{% extends "templates/includes/_base.html" %}
+{% set bodyClass = "home" %}
+
+{% block main %}
+
+  <main>
+
+    {% include "templates/includes/_header.html" %}
+
+    {% include "templates/includes/_featured-carousel.html" %}
+
+    <!-- Videos Card Carosuel -->
+    <div class="card-carousel">
+      <div class="card-carousel__header">
+        <h2 class="card-carousel__heading">Videos</h2>
+        <a href="/videos.html" class="card-carousel__link">View All</a>
+      </div>
+      <div class="slider-wrapper">
+        <div class="card-slider">
+          <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fisheries Card Carosuel -->
+    <div class="card-carousel">
+      <div class="card-carousel__header">
+        <h2 class="card-carousel__heading">Fisheries</h2>
+        <a href="/fisheries.html" class="card-carousel__link">View All</a>
+      </div>
+      <div class="slider-wrapper">
+        <div class="card-slider-2">
+          <div class="tns-item">{% include "templates/includes/_card--fisheries.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--fisheries.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--fisheries.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--fisheries.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--fisheries.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--fisheries.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--fisheries.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--fisheries.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--fisheries.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--fisheries.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--fisheries.html" %}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Articles Card Carosuel -->
+    <div class="card-carousel">
+      <div class="card-carousel__header">
+        <h2 class="card-carousel__heading">Articles</h2>
+        <a href="/articles.html" class="card-carousel__link">View All</a>
+      </div>
+      <div class="slider-wrapper">
+        <div class="card-slider-3">
+          <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+          <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+{% endblock %}

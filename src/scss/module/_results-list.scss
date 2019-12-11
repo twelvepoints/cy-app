@@ -1,0 +1,7 @@
+.results-list {
+  margin-bottom: $pad-unit;
+
+  @media (min-width: $break-large) {
+    margin-bottom: $pad-unit-large;
+  }
+}

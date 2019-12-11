@@ -1,0 +1,42 @@
+{% extends "templates/includes/_base.html" %}
+{% set bodyClass = "articles" %}
+
+{% block main %}
+
+  <main>
+
+    {% include "templates/includes/_search-box.html" %}
+
+    <h1>Articles</h1>
+
+    <div class="results-list">
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      {% include "templates/includes/_listing--article.html" %}
+      <a href="" class="btn btn--hollow btn--full">Load More</a>
+    </div>
+
+  </main>
+
+{% endblock %}

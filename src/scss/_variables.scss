@@ -1,0 +1,42 @@
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+
+$primary-color: white;
+$secondary-color: #D4D4D4; // grey
+$accent-color: #8DC73F; // lime green
+
+$custom-color-1: #002E25; // dark green
+$custom-color-2: #A9ABB1; // button color
+$custom-color-3: lightgrey; // on focus color
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+$base-font-family: 'Lato', sans-serif;
+$base-font-color: white;
+$base-font-size: 16px;
+$base-font-weight: 400;
+
+$base-bg-color: $custom-color-1;
+
+/*--------------------------------------------------------------
+# Headings
+--------------------------------------------------------------*/
+
+$heading-font-family: 'Lato', sans-serif;
+$heading-font-color: white;
+$heading-font-weight: 400;
+
+
+$break-large: 1024px;
+
+
+
+
+$pad-unit: 24px;
+$pad-unit-large: 32px;
+
+$border-radius: 8px;
+$border-radius-large: 16px;

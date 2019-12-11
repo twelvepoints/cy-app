@@ -1,0 +1,29 @@
+{% extends "templates/includes/_base.html" %}
+{% set bodyClass = "login" %}
+
+{% block main %}
+
+  <main>
+
+    <h1>Login</h1>
+
+    <!-- login form -->
+    <form id="Login">
+      <div class="form-group">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+      </div>
+      <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+      </div>
+      <div class="forgot">
+        <a href="/reset.html">Forgot password?</a>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <!-- //login form -->
+
+  </main>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+.star-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  i {
+    color: $accent-color;
+    font-size: 12px;
+    margin-right: 5px;
+    display: inline;
+  }
+
+  span {
+    color: $secondary-color;
+    font-size: 12px;
+  }
+
+  &--large {
+
+    i {
+      font-size: 20px;
+    }
+
+    span {
+      font-size: $base-font-size;
+      margin-left: 10px;
+    }
+  }
+}

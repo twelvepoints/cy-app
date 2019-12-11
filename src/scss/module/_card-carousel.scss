@@ -1,0 +1,29 @@
+.card-carousel {
+  @extend .section-padding;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 16px;
+  }
+
+  &__heading {
+    font-size: 24px;
+    margin: 0;
+
+    @media (min-width: $break-large) {
+      font-size: 32px;
+    }
+  }
+
+  &__link {
+    flex: 0 0 auto;
+    margin-left: 16px;
+    font-size: 80%;
+
+    @media (min-width: $break-large) {
+      font-size: 100%;
+    }
+  }
+}

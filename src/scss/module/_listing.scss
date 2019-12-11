@@ -1,0 +1,56 @@
+.listing {
+  position: relative;
+  margin-bottom: $pad-unit;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    transition: all 0.15s linear;
+
+    &:hover,
+    &:focus {
+      background: rgba($primary-color,0.1);
+      border-radius: $border-radius;
+    }
+  }
+
+  &__image {
+    margin-right: 16px;
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: $border-radius;
+    }
+  }
+
+  &__content {
+
+  }
+
+  &__heading {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: $primary-color !important;
+    transition: all 0.15s linear;
+
+    &:hover,
+    &:focus {
+      color: $accent-color !important;
+    }
+  }
+
+  &__subheading {
+    font-size: 80%;
+    color: $secondary-color;
+    margin-bottom: 8px;
+  }
+
+  .favourite-button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+  }
+}
