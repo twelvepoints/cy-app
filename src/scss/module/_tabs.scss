@@ -4,10 +4,13 @@
 	.nav-tabs {
     position: sticky;
     top: 0;
-    left: -24px;
-    right: -24px;
     display: flex;
     z-index: 9997;
+    margin: 0 -24px;
+
+    @media (min-width: $break-large) {
+      margin: 0 -32px;
+    }
     
     &:after {
       content:"";
@@ -54,6 +57,7 @@
 	}
 
 	.tab-content {
+    min-height: calc(100vh - 100px);
 
 		> .tab-pane {
 			display: none;

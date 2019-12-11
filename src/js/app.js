@@ -3,7 +3,7 @@ window.addEventListener("load", function () {
       container: '.card-slider',
       loop: false,
       mouseDrag: true,
-      swipeAngle: 44,
+      swipeAngle: 45,
       autoplay: false,
       controls: false,
       nav: false,
@@ -14,10 +14,10 @@ window.addEventListener("load", function () {
               gutter: 8,
               items: 2
           },
-          786: {
+          768: {
               edgePadding: 24,
               gutter: 8,
-              items: 4
+              items: 3
           },
           1024: {
               edgePadding: 32,
@@ -31,7 +31,7 @@ window.addEventListener("load", function () {
       container: '.card-slider-2',
       loop: false,
       mouseDrag: true,
-      swipeAngle: 44,
+      swipeAngle: 45,
       autoplay: false,
       controls: false,
       nav: false,
@@ -42,10 +42,10 @@ window.addEventListener("load", function () {
               gutter: 8,
               items: 2
           },
-          786: {
+          768: {
               edgePadding: 24,
               gutter: 8,
-              items: 4
+              items: 3
           },
           1024: {
               edgePadding: 32,
@@ -59,7 +59,7 @@ window.addEventListener("load", function () {
       container: '.card-slider-3',
       loop: false,
       mouseDrag: true,
-      swipeAngle: true,
+      swipeAngle: 45,
       autoplay: false,
       controls: false,
       nav: false,
@@ -70,10 +70,10 @@ window.addEventListener("load", function () {
               gutter: 8,
               items: 2
           },
-          786: {
+          768: {
               edgePadding: 24,
               gutter: 8,
-              items: 4
+              items: 3
           },
           1024: {
               edgePadding: 32,
@@ -87,7 +87,7 @@ window.addEventListener("load", function () {
       container: '.card-slider-4',
       loop: false,
       mouseDrag: true,
-      swipeAngle: true,
+      swipeAngle: 45,
       autoplay: false,
       controls: false,
       nav: false,
@@ -98,10 +98,10 @@ window.addEventListener("load", function () {
               gutter: 8,
               items: 2
           },
-          786: {
+          768: {
               edgePadding: 24,
               gutter: 8,
-              items: 4
+              items: 3
           },
           1024: {
               edgePadding: 32,
@@ -115,8 +115,10 @@ window.addEventListener("load", function () {
       container: '.card-slider-5',
       loop: false,
       mouseDrag: true,
-      swipeAngle: true,
+      swipeAngle: 45,
       autoplay: false,
+      autoplayButton: false,
+      autoplayButtonOutput: false,
       controls: false,
       nav: false,
       startIndex: 0,
@@ -126,10 +128,10 @@ window.addEventListener("load", function () {
               gutter: 8,
               items: 2
           },
-          786: {
+          768: {
               edgePadding: 24,
               gutter: 8,
-              items: 4
+              items: 3
           },
           1024: {
               edgePadding: 32,
@@ -146,8 +148,8 @@ window.addEventListener("load", function () {
       container: '.featured-slider',
       loop: false,
       mouseDrag: true,
-      swipeAngle: true,
-      autoplay: false,
+      swipeAngle: 45,
+      autoplay: true,
       controls: false,
       nav: false,
       startIndex: 0,
@@ -157,10 +159,10 @@ window.addEventListener("load", function () {
               gutter: 8,
               items: 1
           },
-          786: {
+          768: {
               edgePadding: 24,
               gutter: 8,
-              items: 2.5
+              items: 1
           },
           1024: {
               edgePadding: 32,

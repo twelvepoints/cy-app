@@ -2,8 +2,12 @@
   height: 200px;
   position: relative;
 
+
+  @media (min-width: $break-tablet) {
+    height: 320px;
+  }
   @media (min-width: $break-large) {
-    height: 240px;
+    height: 360px;
   }
 
   img {

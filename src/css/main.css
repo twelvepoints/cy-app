@@ -353,10 +353,12 @@ header {
   .tabs-wrapper .nav-tabs {
     position: sticky;
     top: 0;
-    left: -24px;
-    right: -24px;
     display: flex;
-    z-index: 9997; }
+    z-index: 9997;
+    margin: 0 -24px; }
+    @media (min-width: 1024px) {
+      .tabs-wrapper .nav-tabs {
+        margin: 0 -32px; } }
     .tabs-wrapper .nav-tabs:after {
       content: "";
       position: absolute;
@@ -387,18 +389,20 @@ header {
         color: #8DC73F;
         cursor: default;
         border-bottom: 2px solid #8DC73F; }
-  .tabs-wrapper .tab-content > .tab-pane {
-    display: none; }
-    .tabs-wrapper .tab-content > .tab-pane.active {
-      display: block;
-      padding-top: 24px;
-      padding-bottom: 24px; }
-      @media (min-width: 1024px) {
-        .tabs-wrapper .tab-content > .tab-pane.active {
-          padding-top: 32px;
-          padding-bottom: 32px; } }
-  .tabs-wrapper .tab-content > .active {
-    display: block; }
+  .tabs-wrapper .tab-content {
+    min-height: calc(100vh - 100px); }
+    .tabs-wrapper .tab-content > .tab-pane {
+      display: none; }
+      .tabs-wrapper .tab-content > .tab-pane.active {
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px; }
+        @media (min-width: 1024px) {
+          .tabs-wrapper .tab-content > .tab-pane.active {
+            padding-top: 32px;
+            padding-bottom: 32px; } }
+    .tabs-wrapper .tab-content > .active {
+      display: block; }
 
 .account-info {
   display: flex;
@@ -484,9 +488,12 @@ header {
 .featured {
   height: 200px;
   position: relative; }
+  @media (min-width: 768px) {
+    .featured {
+      height: 320px; } }
   @media (min-width: 1024px) {
     .featured {
-      height: 240px; } }
+      height: 360px; } }
   .featured img {
     width: 100%;
     height: 100%;

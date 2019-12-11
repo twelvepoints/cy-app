@@ -18,7 +18,80 @@
 
     {% include "templates/includes/_star-rating-large.html" %}
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi excepturi rem hic. Quo sint ex culpa iste sit doloribus omnis velit, minus rem nostrum explicabo facere ratione reiciendis nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, itaque! Earum facere natus cumque modi repudiandae aliquid voluptates minus aspernatur soluta aperiam. Facere at suscipit nobis quidem vero repudiandae officiis.</p>
+    <div class="tabs-wrapper">
+      <ul class="nav-tabs">
+        <li class="active"><a href="#tab-info">Info</a></li>
+        <li class=""><a href="#tab-videos">Videos</a></li>
+        <li class=""><a href="#tab-articles">Articles</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="tab-info" class="tab-pane active">
+          <h2>Summary</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, blanditiis deserunt. Mollitia optio minima maxime culpa dolores odio expedita! Labore soluta quam eius veniam molestiae nobis in reiciendis quia laudantium.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id numquam corrupti ea omnis suscipit ipsa excepturi, earum eos facilis a nulla placeat recusandae aut minima delectus enim, pariatur, eveniet minus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem expedita totam distinctio explicabo. Dolore vel aperiam numquam ad. Ducimus quas cum optio eius excepturi facilis ut modi consequuntur nam illum.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatibus velit numquam maxime fugit, explicabo iusto laboriosam corrupti labore totam quod facilis eaque sapiente doloremque perferendis nesciunt aliquam. Nulla, saepe?</p>
+        </div>
+
+        <div id="tab-videos" class="tab-pane">
+          <!-- Videos Card Carosuel -->
+          <div class="card-carousel">
+            <div class="card-carousel__header">
+              <h2 class="card-carousel__heading">Videos</h2>
+              <a href="/videos.html" class="card-carousel__link">View All</a>
+            </div>
+            <div class="slider-wrapper">
+              <div class="card-slider">
+                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
+              </div>
+            </div>
+          </div>
+          <!-- // Videos Card Carosuel -->
+        </div>
+
+        <div id="tab-articles" class="tab-pane">
+          <!-- Articles Card Carosuel -->
+          <div class="card-carousel">
+            <div class="card-carousel__header">
+              <h2 class="card-carousel__heading">Articles</h2>
+              <a href="/articles.html" class="card-carousel__link">View All</a>
+            </div>
+            <div class="slider-wrapper">
+              <div class="card-slider-2">
+                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
+              </div>
+            </div>           
+          </div>
+          <!-- // Articles Card Carosuel -->
+        </div>
+
+        <div id="tab-articles" class="tab-pane">
+          map
+        </div>
+
+      </div>
+    </div>
+
+   
 
   </main>
 
