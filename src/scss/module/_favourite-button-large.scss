@@ -1,0 +1,20 @@
+.favourite-button-large {
+
+  a {
+    background: $accent-color;
+    width: 54px;
+    height: 54px;
+    border-radius: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+    transition: all 0.15s linear;
+
+    &:hover {
+      background: white;
+      color: $custom-color-1;
+    }
+  }
+}

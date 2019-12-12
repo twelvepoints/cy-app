@@ -5,6 +5,15 @@
 
 
 
+.position-sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+}
+
+
 .btn {
   background: $accent-color;
   color: $primary-color;
@@ -109,3 +118,10 @@
   }
 }
 
+.video {
+  margin-bottom: $pad-unit;
+
+  @media (min-width: $break-large) {
+    margin-bottom: $pad-unit-large;
+  }
+}

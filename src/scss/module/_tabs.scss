@@ -2,11 +2,12 @@
 	position: relative;
 
 	.nav-tabs {
-    position: sticky;
+    @extend .position-sticky;
     top: 0;
     display: flex;
     z-index: 9997;
     margin: 0 -24px;
+    border-bottom: none;
 
     @media (min-width: $break-large) {
       margin: 0 -32px;

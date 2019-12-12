@@ -1,5 +1,5 @@
 {% extends "templates/includes/_base.html" %}
-{% set bodyClass = "fishery-item" %}
+{% set bodyClass = "item-page" %}
 
 {% block main %}
 
@@ -7,19 +7,19 @@
 
     {% include "templates/includes/_back-button.html" %}
 
-    <div class="video-large-thumb">
-      <img src="https://via.placeholder.com/800x600.png" alt="" class="responsive-img">
+    <div class="video">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/54799270" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
     </div>
 
-    {% include "templates/includes/_favourite-button-large.html" %}
-
-    <h1>Video name here</h1>
-    <h2>Author name here</h2>
-
-    {% include "templates/includes/_star-rating-large.html" %}
+    <div class="heading-group">
+      <h1 class="heading-group__heading">Video title name here</h1>
+      <h2 class="heading-group__subheading">Author name here</h2>
+      {% include "templates/includes/_favourite-button-large.html" %}
+    </div>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi excepturi rem hic. Quo sint ex culpa iste sit doloribus omnis velit, minus rem nostrum explicabo facere ratione reiciendis nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, itaque! Earum facere natus cumque modi repudiandae aliquid voluptates minus aspernatur soluta aperiam. Facere at suscipit nobis quidem vero repudiandae officiis.</p>
-
 
   </main>
 

@@ -16,6 +16,7 @@
 @import './module/_star-rating.scss';
 @import './module/_star-rating-large.scss';
 @import './module/_favourite-button.scss';
+@import './module/_favourite-button-large.scss';
 @import './module/_back-button.scss';
 @import './module/_tabs.scss'; // account tabs
 @import './module/_account-info.scss';
@@ -38,4 +39,37 @@
 @import './module/_card-carousel.scss';
 @import './module/_card.scss';
 
+
+
+
+
+
+.heading-group {
+  margin-bottom: $pad-unit;
+  position: relative;
+
+  @media (min-width: $break-large){
+    margin-bottom: $pad-unit-large;
+  }
+
+  &__heading {
+    font-size: 1.75rem;
+    display: inline-block;
+    margin-bottom: 4px;
+    color: $primary-color !important;
+    transition: all 0.15s linear;
+  }
+
+  &__subheading {
+    font-size: 1rem;
+    color: $secondary-color;
+    margin-bottom: 8px;
+  }
+
+  .favourite-button-large {
+    position: absolute;
+    top: -54px;
+    right: 0;
+  }
+}
 
