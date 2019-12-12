@@ -8,7 +8,6 @@ window.addEventListener("load", function () {
         controls: false,
         nav: false,
         speed: 800,
-        speed: 800,
         responsive: {
             0: {
                 edgePadding: 24,
