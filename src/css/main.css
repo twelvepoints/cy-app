@@ -197,6 +197,26 @@ header {
       header img {
         height: 64px; } }
 
+form .row {
+  margin-right: -4px;
+  margin-left: -4px;
+  margin-bottom: 8px; }
+  @media (min-width: 1024px) {
+    form .row {
+      margin-right: -8px;
+      margin-left: -8px;
+      margin-bottom: 16px; } }
+
+form .row > .col,
+form .row > [class*="col-"] {
+  padding-right: 4px;
+  padding-left: 4px; }
+  @media (min-width: 1024px) {
+    form .row > .col,
+    form .row > [class*="col-"] {
+      padding-right: 8px;
+      padding-left: 8px; } }
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -543,25 +563,25 @@ header {
     .card-carousel__link {
       font-size: 100%; } }
 
-.card {
+.cy-card {
   position: relative; }
-  .card__link {
+  .cy-card__link {
     transition: all 0.15s linear; }
-    .card__link:hover, .card__link:focus {
+    .cy-card__link:hover, .cy-card__link:focus {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 8px; }
-  .card__image {
+  .cy-card__image {
     position: relative;
     display: inline-block; }
-    .card__image img {
+    .cy-card__image img {
       width: 100%;
       max-height: 150px;
       object-fit: cover;
       border-radius: 8px; }
       @media (min-width: 1024px) {
-        .card__image img {
+        .cy-card__image img {
           border-radius: 16px; } }
-    .card__image i {
+    .cy-card__image i {
       width: 40px;
       height: 40px;
       position: absolute;
@@ -573,23 +593,23 @@ header {
       color: white;
       transition: all 0.15s linear;
       text-shadow: 0 0 20px black; }
-    .card__image:hover i, .card__image:focus i {
+    .cy-card__image:hover i, .cy-card__image:focus i {
       color: #8DC73F; }
-  .card__content {
+  .cy-card__content {
     margin-top: 8px; }
-  .card__heading {
+  .cy-card__heading {
     display: inline-block;
     font-weight: bold;
     margin-bottom: 4px;
     color: white !important;
     transition: all 0.15s linear; }
-    .card__heading:hover, .card__heading:focus {
+    .cy-card__heading:hover, .cy-card__heading:focus {
       color: #8DC73F !important; }
-  .card__subheading {
+  .cy-card__subheading {
     font-size: 80%;
     color: #D4D4D4;
     margin-bottom: 8px; }
-  .card .favourite-button {
+  .cy-card .favourite-button {
     position: absolute;
     top: 4px;
     right: 4px; }

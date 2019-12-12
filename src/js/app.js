@@ -7,7 +7,8 @@ window.addEventListener("load", function () {
         autoplay: false,
         controls: false,
         nav: false,
-        startIndex: 0,
+        speed: 800,
+        speed: 800,
         responsive: {
             0: {
                 edgePadding: 24,
@@ -38,7 +39,7 @@ window.addEventListener("load", function () {
       autoplay: false,
       controls: false,
       nav: false,
-      startIndex: 0,
+      speed: 800,
       responsive: {
           0: {
               edgePadding: 24,
@@ -66,7 +67,7 @@ window.addEventListener("load", function () {
       autoplay: false,
       controls: false,
       nav: false,
-      startIndex: 0,
+      speed: 800,
       responsive: {
           0: {
               edgePadding: 24,
@@ -94,7 +95,7 @@ window.addEventListener("load", function () {
       autoplay: false,
       controls: false,
       nav: false,
-      startIndex: 0,
+      speed: 800,
       responsive: {
           0: {
               edgePadding: 24,
@@ -122,7 +123,7 @@ window.addEventListener("load", function () {
       autoplay: false,
       controls: false,
       nav: false,
-      startIndex: 0,
+      speed: 800,
       responsive: {
           0: {
               edgePadding: 24,
@@ -152,7 +153,7 @@ window.addEventListener("load", function () {
       autoplayButtonOutput: false,
       controls: false,
       nav: false,
-      startIndex: 0,
+      speed: 800,
       responsive: {
           0: {
               edgePadding: 24,
