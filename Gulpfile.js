@@ -1,11 +1,11 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
-const sourcemaps = require('gulp-sourcemaps');
-const browserSync = require('browser-sync').create();
-const nunjucksRender = require('gulp-nunjucks-render');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var sourcemaps = require('gulp-sourcemaps');
+var browserSync = require('browser-sync').create();
+var nunjucksRender = require('gulp-nunjucks-render');
 
-// const autoPrefixBrowserList = ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'];
+var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
 
 gulp.task('browserSync', () => {
   browserSync.init({
@@ -21,6 +21,7 @@ gulp.task('sass', () => (
   gulp.src('src/scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass.sync().on('error', sass.logError))
+    .pipe(autoprefixer(autoprefixerOptions))
     .pipe(sourcemaps.write('./maps'))
     // .pipe(postcss([ autoprefixer() ]))
     .pipe(gulp.dest('./src/css'))
