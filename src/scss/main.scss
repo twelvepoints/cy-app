@@ -5,9 +5,11 @@
 @import './variables.scss';
 @import './reset.scss';
 @import './mixins.scss';
-@import './utilities.scss';
+@import './bootstrap.scss';
 @import './base.scss';
+@import './utilities.scss';
 @import './forms.scss';
+@import './pages.scss';
 
 /*--------------------------------------------------------------
 # Components
@@ -38,6 +40,14 @@
 
 @import './module/_card-carousel.scss';
 @import './module/_card.scss';
+
+
+
+
+
+
+
+
 
 
 

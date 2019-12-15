@@ -1,0 +1,34 @@
+{% extends "templates/includes/_base.html" %}
+{% set bodyClass = "landing" %}
+
+{% block main %}
+
+  <div class="landing-main">
+
+    <div class="landing-logo">
+      <img src="./assets/img/carpers-yard-logo.png" alt="Carpers Yard">
+    </div>
+
+    <div class="app-download-links">
+      <a href="#" class="appstore-link">
+        <img src="./assets/img/appstore.png" class="responsive-img" alt="App Store">
+      </a>
+      <a href="#" class="googleplay-link">
+        <img src="./assets/img/googleplay.png" class="responsive-img" alt="Google Play">
+      </a>
+    </div>
+      
+    <div class="bottom-buttons">
+      <a href="/signup.html" class="button button-secondary button-large button-full">Sign up</a>
+      <a href="/login.html" class="button button-primary button-large button-full">Login</a>
+    </div>
+
+  </div>
+
+  <!-- video background -->
+  <div class="background-video">
+    <iframe src="https://player.vimeo.com/video/76979871?background=1&autoplay=1&loop=1&byline=0&title=0"
+            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+
+{% endblock %}

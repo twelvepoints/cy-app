@@ -1,12 +1,13 @@
 {% extends "templates/includes/_base.html" %}
-{% set bodyClass = "forms" %}
+{% set bodyClass = "signup" %}
 
 {% block main %}
 
-  <main>
+  <main class="signup">
 
-    <h1>forms 2</h1>
+    <h1>Sign up</h1>
 
+    {% include "templates/includes/_back-button.html" %}
 
     <form action="#" class="">
       <div class="row">
@@ -55,7 +56,5 @@
     </form>
 
   </main>
-
-  {% include "templates/includes/_menu-bar.html" %}
 
 {% endblock %}

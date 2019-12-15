@@ -21,3 +21,32 @@
     padding-left: 12px;
   }
 }
+
+
+.form-group {
+  margin: 0;
+
+  .form-control {
+    border: none;
+    border-radius: 3px;
+    // background: none;
+    // color: white;
+    // padding-left: 0;
+    // padding-right: 0;
+    // border-bottom: 1px solid $accent-color;
+    outline: none;
+    font-size: 0.9rem;
+  }
+
+  label {
+    color: $accent-color;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  small {
+    font-size: 0.8rem;
+    margin-top: 8px;
+    color: $secondary-color;
+  }
+}

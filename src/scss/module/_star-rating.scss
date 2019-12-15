@@ -5,25 +5,26 @@
 
   i {
     color: $accent-color;
-    font-size: 12px;
-    margin-right: 5px;
+    font-size: 10px;
+    margin-right: 3px;
     display: inline;
   }
 
   span {
     color: $secondary-color;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   &--large {
 
     i {
-      font-size: 20px;
+      font-size: 14px;
+      margin-right: 5px;
     }
 
     span {
-      font-size: $base-font-size;
-      margin-left: 10px;
+      font-size: 15px;
+      margin-left: 5px;
     }
   }
 }

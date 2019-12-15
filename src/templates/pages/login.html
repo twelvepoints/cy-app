@@ -8,22 +8,34 @@
     <h1>Login</h1>
 
     <!-- login form -->
-    <form id="Login">
-      <div class="form-group">
-        <label for="inputEmail">Email</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+    <form action="/" class="">
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" id="exampleInput" placeholder="Your email">
+          </div>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="inputPassword">Password</label>
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+          </div>
+        </div>
       </div>
-      <div class="forgot">
-        <a href="/reset.html">Forgot password?</a>
+      <div class="row ">
+        <div class="col-12">
+          <div class="form-group">
+            <input type="submit" class="button button-primary button-large button-full" value="Login" />
+          </div>
+        </div>
       </div>
-      <button type="submit" class="btn btn-primary">Login</button>
     </form>
-    <!-- //login form -->
 
   </main>
+
+  {% include "templates/includes/_menu-bar.html" %}
 
 {% endblock %}

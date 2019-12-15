@@ -29,59 +29,63 @@
           <h2>Overview</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, blanditiis deserunt. Mollitia optio minima maxime culpa dolores odio expedita! Labore soluta quam eius veniam molestiae nobis in reiciendis quia laudantium.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id numquam corrupti ea omnis suscipit ipsa excepturi, earum eos facilis a nulla placeat recusandae aut minima delectus enim, pariatur, eveniet minus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem expedita totam distinctio explicabo. Dolore vel aperiam numquam ad. Ducimus quas cum optio eius excepturi facilis ut modi consequuntur nam illum.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatibus velit numquam maxime fugit, explicabo iusto laboriosam corrupti labore totam quod facilis eaque sapiente doloremque perferendis nesciunt aliquam. Nulla, saepe?</p>
+
+          <div class="map-wrapper">
+            <!-- Map 4:3 aspect ratio -->
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2394.3266180230826!2d-2.077545048817287!3d53.122282199073425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a44551284185d%3A0x1e4fc58930f55ad!2sRudyard%20Lake!5e0!3m2!1sen!2suk!4v1576370162839!5m2!1sen!2suk" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <!-- // Map -->
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <a href="#" target="_blank" class="button button-primary button-full">Visit Website</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <a href="#" target="_blank" class="button button-bordered button-full">How to find</a>
+            </div>
+            <div class="col-6">
+              <a href="#" target="_blank" class="button button-bordered button-full">Contact</a>
+            </div>
+          </div>
+          
         </div>
 
         <div id="tab-videos" class="tab-pane">
-          <!-- Videos Card Carosuel -->
-          <div class="card-carousel">
-            <div class="card-carousel__header">
-              <h2 class="card-carousel__heading">Videos</h2>
-              <a href="/videos.html" class="card-carousel__link">View All</a>
-            </div>
-            <div class="slider-wrapper">
-              <div class="card-slider">
-                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--videos.html" %}</div>
-              </div>
-            </div>
-          </div>
-          <!-- // Videos Card Carosuel -->
+          <h2>Videos</h2>
+          <div class="results-list">
+            {% include "templates/includes/_listing--video.html" %}
+            {% include "templates/includes/_listing--video.html" %}
+            {% include "templates/includes/_listing--video.html" %}
+            {% include "templates/includes/_listing--video.html" %}
+            {% include "templates/includes/_listing--video.html" %}
+            {% include "templates/includes/_listing--video.html" %}
+            {% include "templates/includes/_listing--video.html" %}
+            {% include "templates/includes/_listing--video.html" %}
+            {% include "templates/includes/_listing--video.html" %}
+            {% include "templates/includes/_listing--video.html" %}
+          </div>  
         </div>
 
         <div id="tab-articles" class="tab-pane">
-          <!-- Articles Card Carosuel -->
-          <div class="card-carousel">
-            <div class="card-carousel__header">
-              <h2 class="card-carousel__heading">Articles</h2>
-              <a href="/articles.html" class="card-carousel__link">View All</a>
-            </div>
-            <div class="slider-wrapper">
-              <div class="card-slider-2">
-                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
-                <div class="tns-item">{% include "templates/includes/_card--articles.html" %}</div>
-              </div>
-            </div>           
-          </div>
-          <!-- // Articles Card Carosuel -->
+          <h2>Articles</h2>
+          <div class="results-list">
+            {% include "templates/includes/_listing--article.html" %}
+            {% include "templates/includes/_listing--article.html" %}
+            {% include "templates/includes/_listing--article.html" %}
+            {% include "templates/includes/_listing--article.html" %}
+            {% include "templates/includes/_listing--article.html" %}
+            {% include "templates/includes/_listing--article.html" %}
+            {% include "templates/includes/_listing--article.html" %}
+            {% include "templates/includes/_listing--article.html" %}
+            {% include "templates/includes/_listing--article.html" %}
+            {% include "templates/includes/_listing--article.html" %}
+            {% include "templates/includes/_listing--article.html" %}
+            {% include "templates/includes/_listing--article.html" %}
+          </div> 
         </div>
 
         <div id="tab-articles" class="tab-pane">
@@ -91,8 +95,8 @@
       </div>
     </div>
 
-   
-
   </main>
+
+  {% include "templates/includes/_menu-bar.html" %}
 
 {% endblock %}

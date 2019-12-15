@@ -5,6 +5,8 @@ const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 const nunjucksRender = require('gulp-nunjucks-render');
 
+// const autoPrefixBrowserList = ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'];
+
 gulp.task('browserSync', () => {
   browserSync.init({
     server: {
@@ -20,11 +22,13 @@ gulp.task('sass', () => (
     .pipe(sourcemaps.init())
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(sourcemaps.write('./maps'))
+    // .pipe(postcss([ autoprefixer() ]))
     .pipe(gulp.dest('./src/css'))
     .pipe(browserSync.reload({
       stream: true
     }))
 ));
+
 
 gulp.task('nunjucks', function () {
   return gulp.src('src/templates/pages/*.html')
