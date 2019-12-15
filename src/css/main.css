@@ -3597,7 +3597,7 @@ main {
     main {
       margin: 0 0 0 100px;
       padding: 32px; } }
-  main.signup {
+  main.signup, main.login {
     margin: 0; }
 
 header {

@@ -88,7 +88,8 @@ main {
     padding: $pad-unit-large;
   }
 
-  &.signup {
+  &.signup,
+  &.login {
     margin: 0;
   }
 }
