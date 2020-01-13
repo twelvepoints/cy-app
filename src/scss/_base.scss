@@ -34,16 +34,16 @@ h1, h2, h3, h4, h5 {
 
 
 h1 {
-  font-size: 160%;
+  font-size: 1.6rem;
 }
 h2 {
-  font-size: 140%;
+  font-size: 1.4rem;
 }
 h3 {
-  font-size: 120%;
+  font-size: 1.2rem;
 }
 h4 {
-  font-size: 100%;
+  font-size: 1rem;
 }
 
 a, a:hover, a:focus {
@@ -88,10 +88,10 @@ main {
     padding: $pad-unit-large;
   }
 
-  &.signup,
-  &.login {
-    margin: 0;
-  }
+  // &.signup,
+  // &.login {
+  //   margin: 0;
+  // }
 }
 
 
