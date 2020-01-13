@@ -68,10 +68,12 @@
 
 
 .heading-group {
+  margin-top: $pad-unit;
   margin-bottom: $pad-unit;
   position: relative;
 
   @media (min-width: $break-large){
+    margin-top: $pad-unit-large;
     margin-bottom: $pad-unit-large;
   }
 

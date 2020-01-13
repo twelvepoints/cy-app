@@ -36,7 +36,11 @@
     // border-bottom: 1px solid $accent-color;
     outline: none;
     font-size: 0.9rem;
-    appearance: none;
+    
+  }
+
+  select.form-control {
+
   }
 
   label {

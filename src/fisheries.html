@@ -24,11 +24,106 @@
 
   <main>
 
-    
-  <form action="/results.html" class="search-box">
-      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+    <form action="/results.html" class="search-box">
+  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+  <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+  <span class="search-open">
+    <i class="fas fa-sliders-h"></i>
+    <div class="label">Refine</div>
+  </span>
+</form>
+
+<div class="advanced-search">
+  <span class="search-close">
+    <i class="fas fa-times-circle"></i>
+    <div class="label">Close</div>
+  </span>
+
+  <form action="#" class="">
+
+    <h2>Refine search</h2>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Distance</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Any</option>
+            <option>1 Mile</option>
+            <option>5 Miles</option>
+            <option>25 Miles</option>
+            <option>50 Miles +</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <label for="exampleFormControlSelect2">Option 1</label>
+          <select class="form-control" id="exampleFormControlSelect2">
+            <option>Any</option>
+            <option>Example 1</option>
+            <option>Example 2</option>
+            <option>Example 3</option>
+            <option>Example 4</option>
+            <option>Example 5</option>
+            <option>Example 6</option>
+            <option>Example 7</option>
+            <option>Example 8</option>
+            <option>Example 9</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <label for="exampleFormControlSelect3">Option 2</label>
+          <select class="form-control" id="exampleFormControlSelect3">
+            <option>Any</option>
+            <option>Example 1</option>
+            <option>Example 2</option>
+            <option>Example 3</option>
+            <option>Example 4</option>
+            <option>Example 5</option>
+            <option>Example 6</option>
+            <option>Example 7</option>
+            <option>Example 8</option>
+            <option>Example 9</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <label for="exampleFormControlSelect4">Option 3</label>
+          <select class="form-control" id="exampleFormControlSelect4">
+            <option>Any</option>
+            <option>Example 1</option>
+            <option>Example 2</option>
+            <option>Example 3</option>
+            <option>Example 4</option>
+            <option>Example 5</option>
+            <option>Example 6</option>
+            <option>Example 7</option>
+            <option>Example 8</option>
+            <option>Example 9</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="advanced-search-button">
+      <a href="/results.html" class="button button-primary button-large button-full">Apply Search</a>
+    </div>
+
   </form>
+</div>
 
     <h1>Fisheries</h1>
 
@@ -606,6 +701,10 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     
   <script src="./js/app.js"></script>
 
