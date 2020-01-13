@@ -127,3 +127,45 @@
     font-size: 9px;
   }
 }
+
+
+
+
+.search-list {
+  margin: 0 -24px 24px -24px;
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  &::-webkit-scrollbar { width: 0 !important }
+
+
+  li {
+    margin: 2px;
+    display: inline-block;
+    &:first-child {
+      margin-left: 24px;
+    }
+    &:last-child {
+      margin-right: 24px;
+    }
+  }
+
+  a {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    display: block;
+    
+    &:hover,
+    &:focus,
+    &.active {
+      background: $accent-color;
+      color: $custom-color-1;
+    }
+  }
+}

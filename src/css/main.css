@@ -2461,6 +2461,33 @@ header {
     margin-top: 2px;
     font-size: 9px; }
 
+.search-list {
+  margin: 0 -24px 24px -24px;
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+  .search-list::-webkit-scrollbar {
+    width: 0 !important; }
+  .search-list li {
+    margin: 2px;
+    display: inline-block; }
+    .search-list li:first-child {
+      margin-left: 24px; }
+    .search-list li:last-child {
+      margin-right: 24px; }
+  .search-list a {
+    border: 1px solid #8DC73F;
+    color: #8DC73F;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    display: block; }
+    .search-list a:hover, .search-list a:focus, .search-list a.active {
+      background: #8DC73F;
+      color: #002E25; }
+
 /*--------------------------------------------------------------
 # featured carousel
 --------------------------------------------------------------*/
