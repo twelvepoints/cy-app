@@ -1,5 +1,5 @@
 $('.owl-carousel-card').owlCarousel({
-    lazyLoad: true,
+    // lazyLoad: true,
     stagePadding: 24,
     loop: false,
     margin: 10,
@@ -26,7 +26,7 @@ $('.owl-carousel-card').owlCarousel({
 
 
 $('.owl-carousel-featured').owlCarousel({
-    lazyLoad: true,
+    // lazyLoad: true,
     stagePadding: 24,
     loop: false,
     margin: 10,
