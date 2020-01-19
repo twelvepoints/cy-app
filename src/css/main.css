@@ -2046,6 +2046,7 @@ header {
 
 .favourite-button-large a {
   background: white;
+  color: #002E25;
   width: 54px;
   height: 54px;
   border-radius: 99px;
@@ -2059,12 +2060,15 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-size: 22px;
-  color: #002E25;
   -webkit-transition: all 0.15s linear;
   transition: all 0.15s linear; }
   .favourite-button-large a:hover, .favourite-button-large a.active {
     background: #8DC73F;
     color: white; }
+
+.favourite-button-large.active a {
+  background: #8DC73F;
+  color: white; }
 
 .back-button {
   width: 44px;
