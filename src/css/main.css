@@ -1640,6 +1640,9 @@ header {
       header img {
         height: 64px; } }
 
+.owl-carousel:not(.owl-loaded) {
+  opacity: 0; }
+
 .responsive-img {
   max-width: 100%;
   height: auto; }
@@ -2464,10 +2467,11 @@ header {
       border-radius: 8px; }
   .cy-card__image {
     position: relative;
-    display: inline-block; }
+    display: block;
+    height: 150px; }
     .cy-card__image img {
       width: 100%;
-      max-height: 150px;
+      height: 100%;
       -o-object-fit: cover;
          object-fit: cover;
       border-radius: 8px; }
