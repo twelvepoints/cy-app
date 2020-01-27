@@ -43,6 +43,8 @@
 
 
 
+
+
 .advanced-search {
   display: none;
   background: $custom-color-1;
@@ -53,6 +55,7 @@
   bottom: 0;
   left: 0;
   padding: $pad-unit $pad-unit 78px $pad-unit;
+  overflow-y: auto;
 
   @media (min-width: $break-large) {
     padding: $pad-unit-large $pad-unit-large $pad-unit-large 132px;
@@ -60,6 +63,10 @@
 
   &.toggled {
     display: block;
+  }
+
+  form {
+    margin: 0 0 100px 0;
   }
 
   &-button {
@@ -96,7 +103,7 @@
 }
 
 .search-close {
-  position: fixed;
+  position: absolute;
   top: 24px;
   right: 24px;
   font-size: 20px;
@@ -157,6 +164,44 @@
     color: $accent-color;
     padding: 10px 20px;
     font-size: 0.8rem;
+    border-radius: 4px;
+    display: block;
+    
+    &:hover,
+    &:focus,
+    &.active {
+      background: $accent-color;
+      color: $custom-color-1;
+    }
+  }
+}
+
+
+.search-option {
+  margin: 0 0 2rem 0;
+
+  h3 {
+    margin: 0 0 0.5rem 0;
+  }
+
+  .form-check-inline {
+    padding: 0;
+    margin: 4px 1px;
+  }
+
+  .form-check-input {
+    display: none;
+
+    &:checked + label {
+      background: $accent-color;
+      color: $custom-color-1;
+    }
+  }
+  .form-check-label {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+    padding: 0.6rem 1rem;
+    font-size: 0.7rem;
     border-radius: 4px;
     display: block;
     
