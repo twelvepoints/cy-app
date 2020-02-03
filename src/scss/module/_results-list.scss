@@ -1,7 +1,10 @@
 .results-list {
   margin-bottom: $pad-unit;
 
-  @media (min-width: $break-large) {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
     margin-bottom: $pad-unit-large;
   }
 }

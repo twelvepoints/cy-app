@@ -208,3 +208,34 @@
   }
 }
 
+
+
+
+
+
+// admin pages
+
+.admin main {
+  padding: $pad-unit;
+  margin: 0 auto;
+  margin-top: $pad-unit;
+  max-width: 768px;
+
+  @media (min-width: $break-large) {
+    padding: $pad-unit-large;
+  }
+}
+
+// app admin pages
+
+.app-admin main {
+  padding: $pad-unit;
+  margin: 0 auto;
+  margin-top: $pad-unit;
+  max-width: 768px;
+
+  @media (min-width: $break-large) {
+    padding: $pad-unit-large;
+    margin: 24px auto 0 auto;
+  }
+}

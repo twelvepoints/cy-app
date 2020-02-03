@@ -1643,7 +1643,7 @@ hr {
   height: 1px;
   margin: 1rem 0;
   border: none;
-  background-color: rgba(255, 255, 255, 0.15); }
+  background-color: rgba(255, 255, 255, 0.3); }
 
 blockquote {
   margin: 1rem 0;
@@ -2062,6 +2062,25 @@ header.logo {
   margin-top: 24px;
   margin-bottom: 24px; }
 
+.admin main {
+  padding: 24px;
+  margin: 0 auto;
+  margin-top: 24px;
+  max-width: 768px; }
+  @media (min-width: 1024px) {
+    .admin main {
+      padding: 32px; } }
+
+.app-admin main {
+  padding: 24px;
+  margin: 0 auto;
+  margin-top: 24px;
+  max-width: 768px; }
+  @media (min-width: 1024px) {
+    .app-admin main {
+      padding: 32px;
+      margin: 24px auto 0 auto; } }
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -2264,7 +2283,10 @@ header.logo {
   @media (min-width: 1024px) {
     .back-button {
       top: 8px;
-      left: 120px; } }
+      left: 120px; }
+      .admin .back-button {
+        top: 8px;
+        left: 8px; } }
   .back-button:hover, .back-button:focus {
     background: #8DC73F;
     color: #002E25; }
@@ -2345,7 +2367,11 @@ header.logo {
   .account-info .profile-image {
     border-radius: 99px;
     border: 2px solid #8DC73F;
-    margin: 16px; }
+    margin: 0 16px 0 0;
+    width: 70px; }
+  .account-info__content {
+    width: 100%;
+    overflow: hidden; }
   .account-info .name {
     color: white;
     font-size: 22px; }
@@ -2355,13 +2381,26 @@ header.logo {
 
 .results-list {
   margin-bottom: 24px; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .results-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin: -12px;
       margin-bottom: 32px; } }
 
 .listing {
   position: relative;
   margin-bottom: 24px; }
+  @media (min-width: 768px) {
+    .listing {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 calc(100% / 2 - 24px);
+              flex: 1 1 calc(100% / 2 - 24px);
+      margin: 12px;
+      margin-bottom: 24px; } }
   .listing__link {
     display: -webkit-box;
     display: -ms-flexbox;

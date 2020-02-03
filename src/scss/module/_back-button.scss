@@ -18,6 +18,11 @@
   @media (min-width: $break-large) {
     top: 8px;
     left: 120px;
+
+    .admin & {
+      top: 8px;
+      left: 8px;
+    }
   }
 
   &:hover,

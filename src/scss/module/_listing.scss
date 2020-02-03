@@ -2,6 +2,12 @@
   position: relative;
   margin-bottom: $pad-unit;
 
+  @media (min-width: 768px) {
+    flex: 1 1 calc(100% / 2 - 24px);
+    margin: 12px;
+    margin-bottom: $pad-unit;
+  }
+
   &__link {
     display: flex;
     align-items: center;
