@@ -86,3 +86,125 @@
     }
   }
 }
+
+
+
+
+
+
+
+.holding {
+  
+
+  .holding-main {
+    height: auto;
+    padding: 24px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/assets/img/holding-background-mobile.jpg') center center no-repeat;
+    background-size: cover;
+
+    @media (min-width: 768px) {
+      height: 100vh;
+      background: url('/assets/img/holding-background.jpg') center center no-repeat;
+      background-size: cover;
+    }
+
+    @media (min-width: $break-large) {
+      padding: $pad-unit-large;
+    }
+  }
+
+  .holding-row {
+    margin: 0;
+    padding: 0;
+  }
+
+  .holding-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .holding-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .holding-logo {
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+
+    img {
+      height: 62px;
+      margin-bottom: 48px;
+      text-align: center;
+
+      @media (min-width: $break-large) {
+        height: 74px;
+      }
+    }
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: $pad-unit;
+
+    @media (min-width: $break-large) {
+      margin-bottom: $pad-unit-large;
+    }
+  }
+
+  form {
+
+    .form-group {
+
+      button {
+        line-height: 36px;
+        padding: 0;
+      }
+    }
+  }
+
+  .app-download-links {
+    display: flex;
+    flex-direction: row;
+    margin: -5px;
+    margin-top: 24px;
+
+    @media (min-width: $break-large) {
+      margin: -10px;
+    }
+
+    img {
+      margin: 5px;
+      height: 45px;
+
+      @media (min-width: $break-large) {
+        margin: 10px;
+        height: 60px;
+      }
+    }
+  }
+
+  .mockup {
+  
+    img {
+      max-height: calc(100vh - 48px);
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+}
+

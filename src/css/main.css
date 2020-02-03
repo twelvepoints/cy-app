@@ -1674,16 +1674,16 @@ main {
       margin: 24px 0 0 100px;
       padding: 32px; } }
 
-header {
+header.logo {
   text-align: center;
   margin-bottom: 24px; }
   @media (min-width: 1024px) {
-    header {
+    header.logo {
       margin-bottom: 24px; } }
-  header img {
+  header.logo img {
     height: 42px; }
     @media (min-width: 1024px) {
-      header img {
+      header.logo img {
         height: 64px; } }
 
 .owl-carousel:not(.owl-loaded) {
@@ -1946,6 +1946,112 @@ header {
     margin-bottom: 16px; }
     .bottom-buttons a:last-of-type {
       margin-bottom: 0; }
+
+.holding .holding-main {
+  height: auto;
+  padding: 24px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("/assets/img/holding-background-mobile.jpg") center center no-repeat;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    .holding .holding-main {
+      height: 100vh;
+      background: url("/assets/img/holding-background.jpg") center center no-repeat;
+      background-size: cover; } }
+  @media (min-width: 1024px) {
+    .holding .holding-main {
+      padding: 32px; } }
+
+.holding .holding-row {
+  margin: 0;
+  padding: 0; }
+
+.holding .holding-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.holding .holding-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.holding .holding-logo {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .holding .holding-logo {
+      text-align: left; } }
+  .holding .holding-logo img {
+    height: 62px;
+    margin-bottom: 48px;
+    text-align: center; }
+    @media (min-width: 1024px) {
+      .holding .holding-logo img {
+        height: 74px; } }
+
+.holding h1 {
+  margin: 0; }
+
+.holding p {
+  margin-bottom: 24px; }
+  @media (min-width: 1024px) {
+    .holding p {
+      margin-bottom: 32px; } }
+
+.holding form .form-group button {
+  line-height: 36px;
+  padding: 0; }
+
+.holding .app-download-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: -5px;
+  margin-top: 24px; }
+  @media (min-width: 1024px) {
+    .holding .app-download-links {
+      margin: -10px; } }
+  .holding .app-download-links img {
+    margin: 5px;
+    height: 45px; }
+    @media (min-width: 1024px) {
+      .holding .app-download-links img {
+        margin: 10px;
+        height: 60px; } }
+
+.holding .mockup img {
+  max-height: calc(100vh - 48px);
+  margin-top: 24px;
+  margin-bottom: 24px; }
 
 /*--------------------------------------------------------------
 # Components
