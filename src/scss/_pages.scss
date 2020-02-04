@@ -215,27 +215,117 @@
 
 // admin pages
 
-.admin main {
-  padding: $pad-unit;
-  margin: 0 auto;
-  margin-top: $pad-unit;
-  max-width: 768px;
+// .admin main {
+//   padding: $pad-unit;
+//   margin: 0 auto;
+//   margin-top: $pad-unit;
+//   max-width: 768px;
 
-  @media (min-width: $break-large) {
-    padding: $pad-unit-large;
+//   @media (min-width: $break-large) {
+//     padding: $pad-unit-large;
+//   }
+// }
+
+// // app admin pages
+
+// .app-admin main {
+//   padding: $pad-unit;
+//   margin: 0 auto;
+//   margin-top: $pad-unit;
+//   max-width: 768px;
+
+//   @media (min-width: $break-large) {
+//     padding: $pad-unit-large;
+//     margin: 24px auto 0 auto;
+//   }
+// }
+
+
+
+
+body.admin {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 100vh;
+  }
+
+  .back-button {
+    color: white;
+    &:hover,
+    &:focus {
+      color: $custom-color-1;
+    }
+  }
+
+  main {
+    flex: 1;
+    order: 2;
+    padding: calc(#{$pad-unit} * 2) $pad-unit $pad-unit $pad-unit;
+    margin: 0;
+
+    @media (min-width: $break-large) {
+      padding: calc(#{$pad-unit-large} * 2) $pad-unit-large $pad-unit-large $pad-unit-large;
+    }
+  }
+
+  aside {
+    flex: 0 0 300px;
+    order: 1;
+    background: $accent-color;
+    padding: calc(#{$pad-unit} * 2) $pad-unit $pad-unit $pad-unit;
+
+    @media (max-width: 768px) {
+      flex: 0;
+      padding: calc(#{$pad-unit} * 3) $pad-unit $pad-unit $pad-unit;
+    }
+    @media (min-width: $break-large) {
+      padding: calc(#{$pad-unit-large} * 2) $pad-unit-large $pad-unit-large $pad-unit-large;
+    }
   }
 }
 
-// app admin pages
+.admin-nav {
 
-.app-admin main {
-  padding: $pad-unit;
-  margin: 0 auto;
-  margin-top: $pad-unit;
-  max-width: 768px;
+  ul {
+    margin: 0;
 
-  @media (min-width: $break-large) {
-    padding: $pad-unit-large;
-    margin: 24px auto 0 auto;
+    @media (max-width: 768px) {
+      white-space: nowrap; /* [1] */
+      overflow-x: auto; /* [2] */
+      -webkit-overflow-scrolling: touch; /* [3] */
+      -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */
+      margin: 0 -24px;
+      padding: 0 24px;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    li {
+      list-style: none;
+      color: $custom-color-1;
+      margin-bottom: 16px;
+
+      @media (max-width: 768px) {
+        display: inline-block;
+        margin-right: 16px;
+        margin-bottom: 0;
+      }
+
+      a {
+        color: $custom-color-1;
+        font-weight: bold;
+        &:hover,
+        &:focus,
+        &.active {
+          color: white;
+        }
+      }
+    }
   }
 }
