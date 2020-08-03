@@ -21,7 +21,7 @@ $('.owl-carousel-card').owlCarousel({
             items: 5
         }
     }
-})
+});
 
 
 
@@ -31,6 +31,7 @@ $('.owl-carousel-featured').owlCarousel({
     loop: false,
     margin: 10,
     nav: false,
+    dots: true,
     responsive: {
         0: {
             stagePadding: 24,
@@ -48,7 +49,35 @@ $('.owl-carousel-featured').owlCarousel({
             items: 2.99
         }
     }
-})
+});
+
+
+
+$('.owl-carousel-big-image').owlCarousel({
+    // lazyLoad: true,
+    loop: true,
+    nav: false,
+    responsive: {
+        0: {
+            margin: 8,
+            items: 1
+        },
+        768: {
+            margin: 12,
+            items: 1
+        },
+        1024: {
+            margin: 16,
+            items: 1
+        }
+    }
+});
+
+
+
+
+
+
 
 
 window.addEventListener("load", function () {

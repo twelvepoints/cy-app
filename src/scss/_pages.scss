@@ -278,9 +278,9 @@ body.admin {
     background: $accent-color;
     padding: calc(#{$pad-unit} * 2) $pad-unit $pad-unit $pad-unit;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       flex: 0;
-      padding: calc(#{$pad-unit} * 3) $pad-unit $pad-unit $pad-unit;
+      padding: calc(#{$pad-unit} * 2) $pad-unit $pad-unit $pad-unit;
     }
     @media (min-width: $break-large) {
       padding: calc(#{$pad-unit-large} * 2) $pad-unit-large $pad-unit-large $pad-unit-large;
@@ -293,7 +293,7 @@ body.admin {
   ul {
     margin: 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       white-space: nowrap; /* [1] */
       overflow-x: auto; /* [2] */
       -webkit-overflow-scrolling: touch; /* [3] */
@@ -311,7 +311,7 @@ body.admin {
       color: $custom-color-1;
       margin-bottom: 16px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         display: inline-block;
         margin-right: 16px;
         margin-bottom: 0;
