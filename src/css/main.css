@@ -2313,8 +2313,7 @@ body.admin {
       -ms-flex-align: center;
           align-items: center;
   -webkit-transition: all 0.15s linear;
-  transition: all 0.15s linear;
-  z-index: 9997; }
+  transition: all 0.15s linear; }
   .favourite-button:focus,
   .favourite-button:visited:focus {
     background-color: rgba(0, 46, 37, 0.5);
@@ -2342,8 +2341,7 @@ body.admin {
           align-items: center;
   font-size: 22px;
   -webkit-transition: all 0.15s linear;
-  transition: all 0.15s linear;
-  z-index: 9997; }
+  transition: all 0.15s linear; }
   .favourite-button-large a:hover, .favourite-button-large a.active {
     background: #8DC73F;
     color: white; }
