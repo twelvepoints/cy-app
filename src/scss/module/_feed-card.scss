@@ -1,0 +1,86 @@
+.feed-card {
+  position: relative;
+  margin: 0 -24px 48px -24px;
+  background: $custom-color-1;
+
+  @media (min-width: 768px) {
+    flex: 1 1 calc(100% / 2 - 24px);
+    margin: 12px;
+    margin-bottom: $pad-unit;
+  }
+
+  @media (min-width: $break-large) {
+    flex: 1 1 calc(100% / 3 - 24px);
+  }
+
+  &__link {
+    transition: all 0.15s linear;
+  }
+  
+  &__image {
+    position: relative;
+    display: block;
+
+    img {
+      width: 100%;
+    }
+
+    i {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -20px;
+      margin-left: -20px;
+      font-size: 40px;
+      color: $primary-color;
+      transition: all 0.15s linear;
+      text-shadow: 0 0 20px black
+    }
+
+    &:hover,
+    &:focus {
+
+      i {
+        color: $accent-color;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    margin: 12px 24px;
+
+    @media (min-width: 768px) {
+      margin: 12px 0;
+    }
+  }
+
+  &__heading {
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 4px;
+    margin-right: 40px;
+    color: $primary-color !important;
+    transition: all 0.15s linear;
+
+    &:hover,
+    &:focus {
+      color: $accent-color !important;
+    }
+  }
+
+  &__subheading {
+    font-size: 80%;
+    color: $secondary-color;
+    margin-bottom: 8px;
+  }
+
+  .favourite-button {
+    position: absolute;
+    top: 0;
+    right: -12px;
+  }
+}

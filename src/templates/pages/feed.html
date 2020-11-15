@@ -1,0 +1,44 @@
+{% extends "templates/includes/_base.html" %}
+{% set bodyClass = "fisheries" %}
+
+{% block main %}
+
+  <main>
+
+    {% include "templates/includes/_search-box.html" %}
+
+    <h1>Feed</h1>
+
+    <div class="results-list">
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      {% include "templates/includes/_feed-card.html" %}
+      <a href="" class="button button-bordered button-full">Load More</a>
+    </div>
+
+  </main>
+
+  {% include "templates/includes/_menu-bar.html" %}
+
+{% endblock %}
