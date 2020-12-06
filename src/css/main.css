@@ -2872,11 +2872,19 @@ body.admin {
       background: white;
       padding: 16px;
       border-radius: 8px;
-      font-size: 0.9rem;
-      line-height: 1.3;
       width: 100%;
       min-height: 70px;
       position: relative; }
+      .comments .comment__message p {
+        font-size: 0.9rem;
+        line-height: 1.3;
+        color: #002E25; }
+        .comments .comment__message p a {
+          color: #8DC73F;
+          -webkit-transition: all 0.15s linear;
+          transition: all 0.15s linear; }
+          .comments .comment__message p a:hover {
+            color: #002E25; }
 
 /*--------------------------------------------------------------
 # featured carousel
