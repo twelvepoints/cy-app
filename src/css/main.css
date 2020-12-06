@@ -2798,6 +2798,86 @@ body.admin {
       background: #8DC73F;
       color: #002E25; }
 
+.comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 420px;
+  margin: 0 auto; }
+  .comments__content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
+  .comments__button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto; }
+  .comments .comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 24px; }
+    .comments .comment--left {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      margin-right: auto; }
+      .comments .comment--left .comment__message:after {
+        right: 100%;
+        top: 44px;
+        border: solid transparent;
+        content: "";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-right-color: #ffffff;
+        border-width: 12px;
+        margin-top: -12px; }
+    .comments .comment--right {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+      margin-left: auto; }
+      .comments .comment--right .comment__message {
+        background: #8DC73F; }
+        .comments .comment--right .comment__message:after {
+          left: 100%;
+          top: 44px;
+          border: solid transparent;
+          content: "";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: rgba(136, 183, 213, 0);
+          border-left-color: #8DC73F;
+          border-width: 12px;
+          margin-top: -12px; }
+    .comments .comment__user {
+      margin: 5px; }
+      .comments .comment__user img {
+        border-radius: 99px;
+        height: 32px;
+        width: 32px;
+        border: 2px solid #8DC73F; }
+    .comments .comment__message {
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      line-height: 1.3;
+      width: 100%;
+      min-height: 70px;
+      position: relative; }
+
 /*--------------------------------------------------------------
 # featured carousel
 --------------------------------------------------------------*/
